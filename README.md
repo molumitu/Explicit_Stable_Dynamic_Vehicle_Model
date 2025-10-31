@@ -1,24 +1,9 @@
 # [Vehicle System Dynamics] An Explicit Discrete-Time Dynamic Vehicle Model with Assured Numerical Stability
 
 ## Method
-Let vehicle dynamical state is $[X, Y, U, V, \varphi, \omega]$, discrete time step is $T_s$, The formulation of our dynamic vehicle model is
-$$
-\left[\begin{array}{c}
-X_{k+1} \\
-Y_{k+1} \\
-U_{k+1} \\
-V_{k+1} \\
-\varphi_{k+1} \\
-\omega_{k+1}
-\end{array}\right]=\left[\begin{array}{c}
-X_{k}+T_{\text{s}}\left(U_{k} \cos \varphi_{k}-V_{k} \sin \varphi_{k}\right) \\
-Y_{k}+T_{\text{s}}\left(V_{k} \cos \varphi_{k}+U_{k} \sin \varphi_{k}\right) \\
-U_{k}+T_{\text{s}} a_{k} \\
-\dfrac{m U_{k} V_{k}+T_{\text{s}}\left(l_{\text{f}}k_{\text{f}}-l_{\text{r}} k_{\text{r}}\right) \omega_{k}-T_{\text{s}} k_{\text{f}} \delta_{k} U_{k}-T_{\text{s}} m U_{k}^{2} \omega_{k}}{m U_{k}-T_{\text{s}}\left(k_{\text{f}}+k_{\text{r}}\right)} \\
-\varphi_{k}+T_{\text{s}} \omega_{k} \\
-\dfrac{I_{\text{z}} U_{k} \omega_{k}+T_{\text{s}}\left(l_{\text{f}} k_{\text{f}}-l_{\text{r}} k_{\text{r}}\right) V_{k}-T_{\text{s}} l_{\text{f}} k_{\text{f}} \delta_{k} U_{k}}{I_{\text{z}} U_{k}-T_{\text{s}}\left(l_{\text{f}}^{2} k_{\text{f}}+l_{\text{r}}^{2} k_{\text{r}}\right)}
-\end{array}\right]
-$$
+Let vehicle dynamical state is $[X, Y, U, V, \varphi, \omega]$, discrete time step is $T_s$, the formulation of our dynamic vehicle model is
+
+![vehicle model](ours_dynamic_vehicle_model.png)
 
 ## Simulation
 We conduct an open-loop test (`open_loop_test.py`) 
