@@ -1,9 +1,9 @@
 # [Vehicle System Dynamics] An Explicit Discrete-Time Dynamic Vehicle Model with Assured Numerical Stability
 
 ## Method
-Let vehicle dynamical state is $[X, Y, U, V, \varphi, \omega]$, discrete time step is $T_s$, the formulation of our dynamic vehicle model is
+Let vehicle dynamical state be $[X, Y, U, V, \varphi, \omega]$, discrete time step be $T_s$, the formulation of our dynamic vehicle model is
 
-![vehicle model](ours_dynamic_vehicle_model.png)
+<img src="ours_dynamic_vehicle_model.png" alt="vehicle model" style="zoom:80%;" />
 
 ## Simulation
 We conduct an open-loop test (`open_loop_test.py`) 
