@@ -3,7 +3,7 @@
 ## Method
 Let vehicle dynamical state be $[X, Y, U, V, \varphi, \omega]$, discrete time step be $T_s$, the formulation of our dynamic vehicle model is
 
-<img src="ours_dynamic_vehicle_model.png" alt="vehicle model" style="zoom:80%;" />
+<img src="ours_dynamic_vehicle_model.png" alt="vehicle model" style="zoom: 33%;" />
 
 ## Simulation
 We conduct an open-loop test (`open_loop_test.py`) 
