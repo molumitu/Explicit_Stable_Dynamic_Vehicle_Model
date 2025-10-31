@@ -28,11 +28,11 @@ We conduct an open-loop test (`open_loop_test.py`)
 - **Results**: The simulation results with varying discrete time steps (1ms, 50ms, and 100ms) are presented below.
 
 ##### Time step = 1 ms
-![Time step = 1ms](results\ts_1ms.png)
+![Time step = 1ms](results/ts_1ms.png)
 ##### Time step = 50 ms
-![Time step = 50ms](results\ts_50ms.png)
+![Time step = 50ms](results/ts_50ms.png)
 ##### Time step = 100 ms
-![Time step = 100ms](results\ts_100ms.png)
+![Time step = 100ms](results/ts_100ms.png)
 
 ## Bibtex citation
 If you find our work useful, please cite our paper:
